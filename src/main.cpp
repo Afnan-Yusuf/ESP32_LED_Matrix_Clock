@@ -22,22 +22,11 @@ void setup() {
 
 void loop() {
   Display.setTextAlignment(PA_LEFT);
-  Display.print("ESP32");
+  Display.print("ABHI");
   delay(2000);
-  
-  Display.setTextAlignment(PA_CENTER);
-  Display.print("ESP32");
+  Display.print("Afnan");
   delay(2000);
-
-  Display.setTextAlignment(PA_RIGHT);
-  Display.print("ESP32");
+  Display.print("Ajay");
   delay(2000);
-
-  Display.setTextAlignment(PA_CENTER);
-  Display.setInvert(true);
-  Display.print("ESP32");
-  delay(2000);
-
-  Display.setInvert(false);
-  delay(2000);
+  Display.getScrollSpacing("Vaishnav");
 }
