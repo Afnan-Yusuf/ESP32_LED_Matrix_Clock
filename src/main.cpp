@@ -45,8 +45,15 @@ void setup () {
 
 void loop () {
   DateTime now = rtc.now();
-  
+  Display.setTextAlignment(PA_CENTER);
    sprintf(buf,"%02d%01c%02d",now.hour(),a, now.minute());
    Display.print(buf);
+   delay(5000);
+   sprintf(buf,"%02d%01c%02d",now.day(),a, now.month());
+   Display.print(buf);
+   delay(5000);
+   sprintf(buf,"%04d",now.year());
+   Display.print(buf);
+   delay(5000);
 
 }
